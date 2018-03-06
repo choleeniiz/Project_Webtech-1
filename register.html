@@ -56,7 +56,7 @@
 
 
         <div class="header">
-            <h1>Login</h1>
+            <h1>Register</h1>
         </div>
         
         <form action="login.php" method="POST">
@@ -71,11 +71,11 @@
             </div>
 
             <div class="input-group">
-                <button class="btn" type="submit"  >Login</button>
+                <button class="btn" type="submit" name="register" >Register</button>
             </div>
             <p>
-                Not yet a member?
-                <a href="register.html">Sign up</a>
+                Already a member?
+                <a href="login.html">Sign in</a>
             </p>  
         </form>
         
@@ -84,26 +84,7 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-    <script>
-            function onClickLogin(){
-                let username = $("#username").val();		// get data from input
-                let password = $("#password").val();
-                $.ajax({
-                    url:"login.php",
-                    type : "",
-                    data : {
-                        username : username	,	// send data to login.php
-                        password : password
-                    },
-                    success : function(res){
-                        // open profile page
-                        window.location.replace("profile.html");
-                    }
-                });
-            }
-        </script>
-        
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>   
     
 </body>
 </html>
